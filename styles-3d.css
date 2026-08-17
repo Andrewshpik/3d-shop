@@ -1,0 +1,38 @@
+:root{--ink:#292725;--paper:#f6f1e9;--blue:#6876a8;--red:#c98270;--line:#d7cec2;--surface:#ece5db;--muted:#706b65;--footer:#292725;--footer-ink:#f6f1e9;color-scheme:light}
+:root[data-theme="dark"]{--ink:#eee9e1;--paper:#1c1b1a;--blue:#9aa8d6;--red:#d99382;--line:#45413d;--surface:#292725;--muted:#aaa39a;--footer:#121211;--footer-ink:#eee9e1;color-scheme:dark}
+body,.header,.cart,.catalog-empty,.about,.product-image,.filters button,.theme-toggle{transition:background-color .35s ease,color .35s ease,border-color .35s ease}
+.logo{display:inline-flex;align-items:center;gap:9px;letter-spacing:0;text-transform:none;white-space:nowrap}
+.logo-mark{display:grid;place-items:center;width:42px;height:36px;background:var(--blue);color:#fff;border-radius:11px 4px 11px 4px;font:600 17px Unbounded;letter-spacing:-1px;transform:rotate(-3deg);box-shadow:3px 3px 0 var(--red)}
+.logo-word{font:500 17px Unbounded;letter-spacing:-1px}
+.header-actions{display:flex;align-items:center;gap:10px}
+.theme-toggle{width:45px;height:45px;border:1px solid var(--line);border-radius:50%;background:var(--surface);color:var(--ink);font-size:19px;cursor:pointer;display:grid;place-items:center}
+.theme-toggle:hover{transform:rotate(12deg)}
+.about{background:#e9e1d7}
+footer{background:var(--footer);color:var(--footer-ink)}
+.hero-3d{background:#8d9ac4;overflow:hidden;isolation:isolate}
+.hero-3d:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 29px,#ffffff20 30px),repeating-linear-gradient(90deg,transparent 0 29px,#ffffff20 30px);transform:perspective(500px) rotateX(58deg) scale(1.6);transform-origin:bottom}
+.shape{position:absolute;border-radius:50%;box-shadow:inset -25px -30px 45px #0004,18px 24px 35px #102b8c88}
+.shape-one{width:250px;height:250px;background:#ff5439;left:12%;top:18%}
+.shape-two{width:175px;height:270px;border-radius:45% 45% 22% 22%;background:#f2d12d;right:12%;bottom:8%;transform:rotate(12deg)}
+.shape-three{width:130px;height:130px;background:#f2eee5;left:48%;bottom:8%}
+.shape-one{background:#d58b78}
+.shape-two{background:#d9c785}
+.shape-three{background:#eee7dd}
+.hero-3d .sticker{z-index:2}
+.catalog-empty{text-align:center;border:1px solid var(--line);padding:80px 20px;background:var(--surface)}
+.catalog-empty>span{display:inline-block;background:var(--blue);color:white;padding:8px 12px;font:600 11px Unbounded;text-transform:uppercase;transform:rotate(-3deg)}
+.catalog-empty h3{font:500 clamp(24px,4vw,44px) Unbounded;margin:25px 0 12px}
+.catalog-empty p{color:var(--muted);margin:0 auto 28px;max-width:520px}
+.catalog-empty a{color:var(--ink);font-weight:700;text-underline-offset:5px}
+@media(max-width:540px){.shape-one{width:180px;height:180px}.shape-two{width:120px;height:190px}.shape-three{width:90px;height:90px}}
+:root[data-theme="dark"] .about{background:#252321}
+:root[data-theme="dark"] .hero-3d{background:#343b58}
+:root[data-theme="dark"] .hero-3d:before{opacity:.55}
+:root[data-theme="dark"] .hero-text,:root[data-theme="dark"] .benefits p,:root[data-theme="dark"] .cart-empty p{color:var(--muted)}
+:root[data-theme="dark"] footer{background:var(--footer);color:var(--footer-ink)}
+:root[data-theme="dark"] .cart-button{background:#eee9e1;color:#1c1b1a}
+@media(max-width:540px){.logo-word{font-size:14px}.logo-mark{width:36px;height:32px;font-size:14px}.theme-toggle{width:39px;height:39px}.cart-button{padding:10px 12px;font-size:0}.cart-button span{font-size:12px;margin-left:0}}
+.telegram-float{position:fixed;right:24px;bottom:24px;z-index:19;display:flex;align-items:center;gap:11px;padding:14px 18px;background:#229ed9;color:#fff;text-decoration:none;border-radius:999px;font-weight:700;font-size:13px;box-shadow:0 12px 30px #172d3a40;transition:transform .2s ease,box-shadow .2s ease}
+.telegram-float svg{width:23px;height:23px;fill:currentColor;flex:none}
+.telegram-float:hover{transform:translateY(-3px);box-shadow:0 16px 36px #172d3a55}
+@media(max-width:540px){.telegram-float{right:16px;bottom:16px;width:56px;height:56px;padding:0;justify-content:center}.telegram-float span{display:none}.telegram-float svg{width:26px;height:26px}}
